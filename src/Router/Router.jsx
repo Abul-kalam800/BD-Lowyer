@@ -17,7 +17,8 @@ const router = createBrowserRouter([
         children: [
             {
             path:'/',
-                Component: Home
+                Component: Home,
+                loader:()=> fetch('/lowyersData.json'),
             },
             {
                 path:'mybooking',
