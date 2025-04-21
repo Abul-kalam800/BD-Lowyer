@@ -10,6 +10,7 @@ const LowyerDetails = () => {
     const singalLaywer = data.find(layer => layer.id === parseInt(id));
 
     const { image, name, department, experience, licenseNo,availableDays,consultationFee } = singalLaywer;
+   
     return (
         <div>
             {/* loywer details heading  */}
@@ -24,7 +25,7 @@ const LowyerDetails = () => {
                 </div>
                 <div>
                     <div>
-                        <button className='bg-blue-100 text-blue-300 px-4 rounded-2xl font-semibold'>{experience}</button>
+                        <button className='bg-blue-50 text-blue-300 px-4 rounded-2xl font-semibold'>{experience}</button>
                     </div>
                     <h1 className='text-3xl font-bold mt-4'>{name}</h1>
                     <div className='flex gap-9 mt-6'>
@@ -33,7 +34,7 @@ const LowyerDetails = () => {
                     </div>
                     <p className='font-semibold'> Aviablity:
                     {
-                        availableDays.map(day => <button className='ml-8 bg-red-200 text-red-300 rounded-2xl px-4'>{day}</button>)
+                        availableDays.map(day => <button className='ml-8 bg-red-50 text-red-300 rounded-2xl px-4'>{day}</button>)
                     }
 
                     </p>
@@ -44,6 +45,14 @@ const LowyerDetails = () => {
 
             </div>
             {/* loywer booking button  */}
+            <div className='my-9 border border-gray-300 p-5 rounded-2xl '>
+                <h1 className='text-center text-3xl font-bold border-b border-dashed border-gray-300 pb-6'>Book an Appoinment </h1>
+              <div className='flex justify-between items-center border-b border-dashed border-gray-300 py-5 '>
+              <p className='font-bold'>Avaiability:</p>
+              <button className='bg-green-50 text-green-600 px-6 py-2 rounded-2xl'>Lowers Avaiable today</button>
+              </div>
+                <button className='w-full bg-green-600 p-2 rounded-full text-white my-12 font-semibold text-xl cursor-pointer'>Book Appoinment now</button>
+            </div>
         </div>
        
     );

@@ -16,8 +16,8 @@ import { Link } from 'react-router';
             </div>
             <div>
                 <div className='flex gap-5'>
-                    <button className='bg-green-100 text-green-300 px-4 rounded-2xl font-semibold'>Avilable</button>
-                    <button className='bg-blue-100 text-blue-300 px-4 rounded-2xl font-semibold'>{experience}</button>
+                    <button className='bg-green-50 text-green-500 px-4 rounded-2xl font-semibold'>Avilable</button>
+                    <button className='bg-blue-50 text-blue-500 px-4 rounded-2xl font-semibold'>{experience}</button>
                 </div>
                 <h1 className='text-2xl font-bold mt-4'>{name}</h1>
                 <p className='mb-3'>{department}</p>
