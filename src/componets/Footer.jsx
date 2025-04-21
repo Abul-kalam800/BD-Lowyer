@@ -16,7 +16,7 @@ const Footer = () => {
                     Low.BD
                 </h1>
                 {/* nav link  */}
-                <ul className="flex flex-col md:flex-row justify-center items-center gap-6">
+                <ul className="flex flex-col md:flex-row justify-center items-center gap-6 mb-9">
                     <NavLink to="/"><li className='ml-9'>Home</li></NavLink>
                     <NavLink to="/mybooking"><li className='ml-9'>Mybooking</li></NavLink>
                     <NavLink to="/blogs"><li className='ml-9'>Blogs</li></NavLink>
@@ -24,8 +24,8 @@ const Footer = () => {
 
                 </ul>
                 {/* social icon  */}
-                <div className='flex justify-center items-center gap-5 my-12'>
-                    <a className='text-2xl bg-blue-600 rounded-full p-2' href=""> <FaFacebookF />
+                <div className='flex justify-center items-center gap-5 py-6 border-t border-dashed'>
+                    <a className='text-2xl bg-blue-600 rounded-full p-2' href="https://www.facebook.com/bd.abulkalam800/"> <FaFacebookF />
                     </a>
                     <a className='text-2xl bg-red-600 rounded-full p-2' href=""> <FaInstagram />
                     </a>

@@ -6,7 +6,6 @@ import LowyerContainers from '../componets/LowyerContainers';
  const Home = () => {
     return (
         <div>
-           <h1>This is home page</h1>
            <Hero></Hero>
            <LowyerContainers></LowyerContainers>
          
