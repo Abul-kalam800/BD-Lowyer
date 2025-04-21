@@ -6,6 +6,7 @@ import ErrorPage from '../pages/ErrorPage';
 import Blogs from '../pages/Blogs';
 import Mybooking from '../pages/Mybooking';
 import ContactUs from '../pages/ContactUs';
+import LowyerDetails from '../componets/LowyerDetails';
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,11 @@ const router = createBrowserRouter([
             {
                 path:'contactus',
                 Component:ContactUs
+            },
+            {
+                path:'/lowyerdetails/:id',
+                Component:LowyerDetails,
+                loader:()=> fetch('lowyersData.json'),
             }
         ],
           
