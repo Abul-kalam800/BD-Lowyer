@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "name": "Alex Johnson",
+      "name": "Alex Jenifa",
       "department": "Criminal Law",
       "experience": "12+years expeience",
       "image":"https://i.ibb.co/VW5JkWMG/amin-naderloei-Ys-TOfz-RHd2-I-unsplash.jpg" ,
@@ -21,7 +21,7 @@
     },
     {
       "id": 3,
-      "name": "Daniel Lee",
+      "name": "Samima akter",
       "department": "Corporate Law",
       "experience":"15+years expeience",
       "image": "https://i.ibb.co/svwDTZQD/fotos-Jqlp-G6o-OAko-unsplash.jpg",
@@ -61,7 +61,7 @@
     },
     {
       "id": 7,
-      "name": "Liam Martinez",
+      "name": "Olivia Wilson",
       "department": "Tax Law",
       "experience": "14+years expeience",
       "image":"https://i.ibb.co/tT4N7Phk/nussbaum-law-IOvs-EAEjn-DE-unsplash.jpg",
@@ -71,7 +71,7 @@
     },
     {
       "id": 8,
-      "name": "Olivia Wilson",
+      "name": "Liam Martinez",
       "department": "Employment Law",
       "experience":"6+years expeience",
       "image": "https://i.ibb.co/20LZ35vV/nussbaum-law-T4w6f2-Jrn-AM-unsplash-1.jpg",
@@ -81,7 +81,7 @@
     },
     {
       "id": 9,
-      "name": "James Anderson",
+      "name": "Isabella Thomas",
       "department": "Environmental Law",
       "experience":"7+years expeience",
       "image": "https://i.ibb.co/DPP1MK46/praja-nugraha-UWu9cp-Jl-YTk-unsplash.jpg",
@@ -91,7 +91,7 @@
     },
     {
       "id": 10,
-      "name": "Isabella Thomas",
+      "name": "James Anderson",
       "department": "Real Estate Law",
       "experience": "13+years expeience",
       "image":"https://i.ibb.co/TB1c8QNd/steward-masweneng-u-Ivj-Lq-q5g8-unsplash.jpg",
