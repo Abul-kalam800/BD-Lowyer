@@ -1,5 +1,6 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { Link, useLoaderData, useParams } from 'react-router';
+import { addBookingSet } from '../utilits/BookingDone';
 
 const LowyerDetails = () => {
 
@@ -10,6 +11,11 @@ const LowyerDetails = () => {
     const singalLaywer = data.find(layer => layer.id === parseInt(id));
 
     const { image, name, department, experience, licenseNo,availableDays,consultationFee } = singalLaywer;
+
+    const handeleBooking =()=>{
+        addBookingSet(singalLaywer);
+        
+    }
    
     return (
         <div>
@@ -51,7 +57,9 @@ const LowyerDetails = () => {
               <p className='font-bold'>Avaiability:</p>
               <button className='bg-green-50 text-green-600 px-6 py-2 rounded-2xl'>Lowers Avaiable today</button>
               </div>
-                <button className='w-full bg-green-600 p-2 rounded-full text-white my-12 font-semibold text-xl cursor-pointer'>Book Appoinment now</button>
+                <Link to="/mybooking">
+                <button onClick={()=>handeleBooking()} className='w-full bg-green-600 p-2 rounded-full text-white my-12 font-semibold text-xl cursor-pointer'>Book Appoinment now</button>
+                </Link>
             </div>
         </div>
        
