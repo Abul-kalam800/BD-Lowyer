@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "quesion": "What is useState and how does it work in React?",
+        "answer": "useState is a react hook. It is used as a  special veriable in react componet. useState write like arry destrachur const [value,setValue]=useState() ,, useState we can initilized any value when componet render it display as initilized,"
+    },
+    {
+        "id": 2,
+        "quesion": "What is the purpose of useEffect in React?",
+        "answer": "useEffect is a react hook.It is purpose  when change something in componet usede useEffects. useEffects tekes two parameter 1.function 2.dependece. useEffect looking like useEffect(()=>{},[],,It 's  main purpose is external interactivity like server api with connect them."
+    },
+    {
+        "id": 3,
+        "quesion": "What is a custom hook in React and when should you use one?",
+        "answer": "Custom hook is a makeing your own purpose. It used for reuseability.React give built in hook sometimes you need some hook for your app that time you can use coustom hook"
+    },
+    {
+        "id": 4,
+        "quesion": "Difference between controlled and uncontrolled components. Which one is better?",
+        "answer": "Main different is controlled compont is you can controlled everyting.controlled componet shoud not undefind or null, But uncontrolled compnet should null undefind. Contrlled is better."
+    },
+    {
+        "id": 5,
+        "quesion": "Tell us something about useFormStatus() in React.",
+        "answer": "useFormStatus is react hook.It does not take any parameter.But returns (pendeing,data,methed,auction) It main worke is who last submission form give data.It checked data from server is ok done, if not ok pending, and used methed get and post for request api or server.Then after acution is from valid or not"
+    }
+]

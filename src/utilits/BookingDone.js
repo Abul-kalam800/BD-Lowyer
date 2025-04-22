@@ -11,11 +11,20 @@ const getBooking = () => {
 const addBookingSet = (layer) => {
 
     const layers = getBooking();
-    const isExist = layers.find((Loyer)=>Loyer.id===layer.id);
-    if(isExist) return alert('already added')
-        layers.push(layer)
+    const isExist = layers.find((Loyer) => Loyer.id === layer.id);
+    if (isExist) return alert('already added')
+    layers.push(layer)
     localStorage.setItem("getLayers", JSON.stringify(layers))
 
 
 }
-export { addBookingSet, getBooking }
+
+const cancleBooking = (id) => {
+    const booking = getBooking();
+    const removedBook = booking.filter((book)=> book.id !== id)
+    localStorage.setItem("getLayers", JSON.stringify(removedBook))
+    console.log(removedBook, "removed")
+
+
+}
+export { addBookingSet, getBooking, cancleBooking}

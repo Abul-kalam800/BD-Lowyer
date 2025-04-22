@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getBooking } from '../utilits/BookingDone';
 import Chart from '../componets/Chart';
 import { Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis } from 'recharts';
+import Emptybookin from '../componets/Emptybookin';
 
 const Mybooking = () => {
     const [booking, setBooking] = useState([])
@@ -12,8 +13,12 @@ const Mybooking = () => {
 
     }, []);
 
-  
-   
+    if (booking.length < 1) {
+        return <Emptybookin></Emptybookin>
+    }
+      
+    
+
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
     const getPath = (x, y, width, height) => {
         return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
@@ -27,15 +32,13 @@ const Mybooking = () => {
 
         return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
     };
+
     return (
         <div>
-            {/* <div className='my-52 text-center'>
-                <h1 className='text-5xl font-bold'>Not yet Booking Please booking Now</h1>
-                <Link to="/">   <button className='px-6 py-3 bg-blue-100 text-xl font-bold text-blue-500 rounded-full cursor-pointer my-5 hover:bg-blue-500 hover:text-white'>Go to Home</button></Link>
-            </div> */}
+    
             <h1>my booking list: {booking.length}</h1>
 
-            <div className= 'mt-9'>
+            <div className='mt-9'>
                 <BarChart width={1200} height={400} data={booking} margin={{
                     top: 20,
                     right: 30,
@@ -48,7 +51,7 @@ const Mybooking = () => {
                         <Cell key={`cell-${index}`} fill={colors[index % 20]} />
                     ))}
 
-                   
+
                     <YAxis dataKey="consultationFee"></YAxis>
                     <XAxis dataKey="name"></XAxis>
                 </BarChart>
@@ -56,6 +59,7 @@ const Mybooking = () => {
 
             <div>
                 <div>
+                    <h1 className='text-center text-3xl font-bold border-b border-dashed border-gray-300 pb-6'>My today an Appoinment </h1>
                     {
                         booking.map(book => <Chart key={book.id} book={book} booking={booking}> </Chart>)
                     }

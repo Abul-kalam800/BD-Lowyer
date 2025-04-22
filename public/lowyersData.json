@@ -7,7 +7,7 @@
       "image":"https://i.ibb.co/VW5JkWMG/amin-naderloei-Ys-TOfz-RHd2-I-unsplash.jpg" ,
       "availableDays": ["Monday", "Wednesday", "Friday"],
       "licenseNo": "CRL123456",
-      "consultationFee": 150
+      "consultationFee": 650
     },
     {
       "id": 2,
@@ -17,7 +17,7 @@
       "image":"https://i.ibb.co/LXJdV4SB/fotos-do-UCnzg7-Ds-E-unsplash.jpg",
       "availableDays": ["Tuesday", "Thursday"],
       "licenseNo": "FML789012",
-      "consultationFee": 100
+      "consultationFee": 400
     },
     {
       "id": 3,
@@ -27,7 +27,7 @@
       "image": "https://i.ibb.co/svwDTZQD/fotos-Jqlp-G6o-OAko-unsplash.jpg",
       "availableDays": ["Monday", "Thursday"],
       "licenseNo": "COR345678",
-      "consultationFee": 200
+      "consultationFee": 350
     },
     {
       "id": 4,
@@ -37,7 +37,7 @@
       "image": "https://i.ibb.co/Mykspgdp/gulnar-mardanova-Po-EE3-Ce1bi-E-unsplash.jpg",
       "availableDays": ["Wednesday", "Friday"],
       "licenseNo": "IMM901234",
-      "consultationFee": 120
+      "consultationFee": 620
     },
     {
       "id": 5,
@@ -47,7 +47,7 @@
       "image":"https://i.ibb.co/G34yhgcM/mohamad-khosravi-ikjv-Pf-C3pb-I-unsplash.jpg",
       "availableDays": ["Tuesday", "Thursday","Saturday","Sunday"],
       "licenseNo": "CIV567890",
-      "consultationFee": 130
+      "consultationFee": 430
     },
     {
       "id": 6,
@@ -57,7 +57,7 @@
       "image":"https://i.ibb.co/R4GS8Nz2/muhammad-faiz-zulkeflee-qj-Ijj-AV4j7-E-unsplash.jpg",
       "availableDays": ["Monday", "Wednesday"],
       "licenseNo": "IPL432109",
-      "consultationFee": 180
+      "consultationFee": 980
     },
     {
       "id": 7,
@@ -67,7 +67,7 @@
       "image":"https://i.ibb.co/tT4N7Phk/nussbaum-law-IOvs-EAEjn-DE-unsplash.jpg",
       "availableDays": ["Tuesday", "Saturday","Sunday"],
       "licenseNo": "TAX654321",
-      "consultationFee": 170
+      "consultationFee": 470
     },
     {
       "id": 8,
@@ -87,7 +87,7 @@
       "image": "https://i.ibb.co/DPP1MK46/praja-nugraha-UWu9cp-Jl-YTk-unsplash.jpg",
       "availableDays": ["Wednesday", "Friday"],
       "licenseNo": "ENV789321",
-      "consultationFee": 140
+      "consultationFee": 850
     },
     {
       "id": 10,
@@ -97,7 +97,7 @@
       "image":"https://i.ibb.co/TB1c8QNd/steward-masweneng-u-Ivj-Lq-q5g8-unsplash.jpg",
       "availableDays": ["Tuesday", "Thursday","Saturday","Sunday"],
       "licenseNo": "REA159753",
-      "consultationFee": 160
+      "consultationFee": 360
     },
     {
       "id": 11,
@@ -107,7 +107,7 @@
       "image": "https://i.ibb.co/LhbMT2Mn/tran-nhu-tuan-My-Za-GD52-Q4-I-unsplash-Copy.jpg",
       "availableDays": ["Monday", "Wednesday"],
       "licenseNo": "BNK357159",
-      "consultationFee": 90
+      "consultationFee": 690
     },
     {
       "id": 12,
@@ -117,7 +117,7 @@
       "image":"https://i.ibb.co/RpkSWfjm/tran-nhu-tuan-x7ks-Va-D2-VI-unsplash.jpg",
       "availableDays": ["Tuesday", "Friday"],
       "licenseNo": "CON753951",
-      "consultationFee": 190
+      "consultationFee": 500
     }
   ]
   

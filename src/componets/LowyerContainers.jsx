@@ -19,8 +19,8 @@ const LowyerContainers = ({ lowyers }) => {
 
     return (
         <div className='max-w-screen-xl mx-auto'>
-            <div>
-                <h1 className='text-5xl w-4/12 mx-auto mt-14 font-bold'>Our best lawyers</h1>
+            <div className='text-center'>
+                <h1 className='text-5xl mt-14 font-bold'>Our best lawyers</h1>
                 <p className='text-center pt-12 w-[80%] mx-auto text-lg'>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience. Whether it's a routine checkup or urgent consultation, book appointments in minutes and receive quality care you can trust.</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 justify-center gap-10 my-16'>

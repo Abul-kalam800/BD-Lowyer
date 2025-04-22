@@ -28,16 +28,16 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <NavLink to="/"><li className='ml-9'>Home</li></NavLink>
-                        <NavLink to="/mybooking"><li className='ml-9'>Mybooking</li></NavLink>
-                        <NavLink to="/blogs"><li className='ml-9'>Blogs</li></NavLink>
-                        <NavLink to="/contactus"><li className='ml-9'>ContactUs</li></NavLink>
+                    <ul className="menu menu-horizontal px-1 font-bold flex gap-8">
+                        <NavLink to="/" className={({ isActive }) => isActive ? " border-b-2" : " "}><li>Home</li> </NavLink>
+                        <NavLink to="/mybooking" className={({ isActive }) => isActive ? " border-b-2" : " "}><li>Mybooking</li></NavLink>
+                        <NavLink to="/blogs" className={({ isActive }) => isActive ? " border-b-2" : " "}><li>Blogs</li></NavLink>
+                        <NavLink to="/contactus" className={({ isActive }) => isActive ? " border-b-2" : " "} ><li>ContactUs</li></NavLink>
 
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-green-400 rounded-full text-white">Contact now</a>
+                    <a className="btn hidden md:block bg-green-400 rounded-full text-white">Contact now</a>
                 </div>
             </div>
         </div>

@@ -17,10 +17,10 @@ const Footer = () => {
                 </h1>
                 {/* nav link  */}
                 <ul className="flex flex-col md:flex-row justify-center items-center gap-6 mb-9">
-                    <NavLink to="/"><li className='ml-9'>Home</li></NavLink>
-                    <NavLink to="/mybooking"><li className='ml-9'>Mybooking</li></NavLink>
-                    <NavLink to="/blogs"><li className='ml-9'>Blogs</li></NavLink>
-                    <NavLink to="/contactus"><li className='ml-9'>ContactUs</li></NavLink>
+                    <NavLink to="/"><li>Home</li></NavLink>
+                    <NavLink to="/mybooking"><li>Mybooking</li></NavLink>
+                    <NavLink to="/blogs"><li>Blogs</li></NavLink>
+                    <NavLink to="/contactus"><li>ContactUs</li></NavLink>
 
                 </ul>
                 {/* social icon  */}
