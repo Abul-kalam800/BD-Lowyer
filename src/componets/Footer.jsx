@@ -29,9 +29,9 @@ const Footer = () => {
                     </a>
                     <a className='text-2xl bg-red-600 rounded-full p-2' href=""> <FaInstagram />
                     </a>
-                    <a className='text-2xl bg-red-600 rounded-full p-2' href=""> <CiYoutube />
+                    <a className='text-2xl bg-red-600 rounded-full p-2' href="https://www.youtube.com/channel/UC4MkcFVTRsS6Jo8_sgIsGMg"> <CiYoutube />
                     </a>
-                    <a className='text-2xl bg-blue-300 rounded-full p-2' href=""><FaLinkedinIn />
+                    <a className='text-2xl bg-blue-300 rounded-full p-2' href="https://www.linkedin.com/in/mohammad-abul-kalam-226779303/"><FaLinkedinIn />
                     </a>
                 </div>
             </div>

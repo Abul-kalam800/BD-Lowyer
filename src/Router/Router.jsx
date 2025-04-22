@@ -9,6 +9,7 @@ import ContactUs from '../pages/ContactUs';
 import LowyerDetails from '../componets/LowyerDetails';
 
 
+
 const router = createBrowserRouter([
 
     {
@@ -18,16 +19,19 @@ const router = createBrowserRouter([
         children: [
             {
             path:'/',
-                Component: Home,
+            Component: Home,
+            hydrateFallbackElement:<span className="loading loading-bars loading-xl text-center my-32 mx-32"></span>,
                 loader:()=> fetch('/lowyersData.json'),
             },
             {
+                hydrateFallbackElement:<span className="loading loading-bars loading-xl text-center my-32 mx-32"></span>,
                 path:'mybooking',
                 Component:Mybooking
             },
             {
                 path: 'blogs',
                 Component:Blogs,
+                hydrateFallbackElement:<span className="loading loading-bars loading-xl text-center my-32 mx-32 ml-58"></span>,
                 loader:()=> fetch('blogsData.json')
                 
             },
@@ -38,6 +42,7 @@ const router = createBrowserRouter([
             {
                 path:'/lowyerdetails/:id',
                 Component:LowyerDetails,
+                hydrateFallbackElement:<span className="loading loading-bars loading-xl text-center my-32 "></span>,
                 loader:()=> fetch('lowyersData.json'),
             }
         ],

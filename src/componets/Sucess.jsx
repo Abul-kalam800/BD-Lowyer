@@ -15,24 +15,24 @@ const Sucess = () => {
             </div>
 
           
-            <div className='sucess-container grid grid-col md:grid-cols-4 gap-6 mb-32'>
+            <div className='sucess-container grid grid-col md:grid-cols-4 gap-6 mb-32 text-center lg:text-left'>
                 <div className='card space-y-5 p-8 bg-gray-200'>
-                    <div><img src={lawer} alt="lawer" /></div>
+                    <div className='mx-auto lg:mx-0'><img src={lawer} alt="lawer" /></div>
                     <h1 className='text-6xl font-bold'><CountUp end={199} duration={30}/>+ </h1>
                     <p className='text-xl font-medium'>Total lowyers</p>
                 </div>
                 <div className='card space-y-5 p-8 bg-gray-200'>
-                <div><img src={review} alt="lawer" /></div>
+                <div className='mx-auto lg:mx-0'><img src={review} alt="lawer" /></div>
                     <h1 className='text-6xl font-bold'> <CountUp end={447} duration={30}/>+ </h1>
                     <p className='text-xl font-medium'>Total review</p>
                 </div>
                 <div className='card space-y-5 p-8 bg-gray-200'>
-                <div><img src={cost} alt="lawer" /></div>
+                <div className='mx-auto lg:mx-0'><img src={cost} alt="lawer" /></div>
                     <h1 className='text-6xl font-bold'><CountUp end={1990} duration={20}/>+</h1>
                     <p className='text-xl font-medium'>Total Case initled</p>
                 </div>
                 <div className='card space-y-5 p-8 bg-gray-200'>
-                <div><img src={staffs} alt="lawer" /></div>
+                <div className='mx-auto lg:mx-0'><img src={staffs} alt="lawer" /></div>
                     <h1 className='text-6xl font-bold'><CountUp end={330} duration={40}/>+ </h1>
                     <p className='text-xl font-medium'>Total Staffs</p>
                 </div>
