@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router';
 import { addBookingSet } from '../utilits/BookingDone';
+import { PiTrademarkRegistered } from "react-icons/pi";
 
 const LowyerDetails = () => {
 
@@ -26,8 +27,8 @@ const LowyerDetails = () => {
             </div>
                 {/* loywer details part  */}
             <div className='border border-gray-300 mb-20 rounded-2xl p-8 flex gap-8 items-center'>
-                <div className='w-[300px] p-8  bg-gray-100 rounded-xl'>
-                    <img className='max-h-full max-w-full mx-auto' src={image} alt="lowyer" />
+                <div className='w-[300px] p-2  bg-gray-100 rounded-xl'>
+                    <img className='w-[300px] mx-auto' src={image} alt="lowyer" />
                 </div>
                 <div>
                     <div>
@@ -36,7 +37,7 @@ const LowyerDetails = () => {
                     <h1 className='text-3xl font-bold mt-4'>{name}</h1>
                     <div className='flex gap-9 mt-6'>
                         <p className='mb-3'>{department}</p>
-                        <p> Lincense No - {licenseNo}</p>
+                        <p className='flex gap-2'><span><PiTrademarkRegistered  size={24} className='text-blue-300'/> </span> Lincense No - {licenseNo}</p>
                     </div>
                     <p className='font-semibold'> Aviablity:
                     {
