@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getBooking } from '../utilits/BookingDone';
+import { cancleBooking, getBooking } from '../utilits/BookingDone';
 import Chart from '../componets/Chart';
 import { Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis } from 'recharts';
 import Emptybookin from '../componets/Emptybookin';
@@ -13,11 +13,16 @@ const Mybooking = () => {
 
     }, []);
 
+    const handelRemovedBooing = (id) => {
+        cancleBooking(id)
+       setBooking(getBooking())
+    }
+
     if (booking.length < 1) {
         return <Emptybookin></Emptybookin>
     }
-      
-    
+
+
 
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
     const getPath = (x, y, width, height) => {
@@ -35,7 +40,7 @@ const Mybooking = () => {
 
     return (
         <div>
-    
+
             <h1>my booking list: {booking.length}</h1>
 
             <div className='mt-9'>
@@ -61,7 +66,7 @@ const Mybooking = () => {
                 <div>
                     <h1 className='text-center text-3xl font-bold border-b border-dashed border-gray-300 pb-6'>My today an Appoinment </h1>
                     {
-                        booking.map(book => <Chart key={book.id} book={book} booking={booking}> </Chart>)
+                        booking.map(book => <Chart key={book.id} book={book} booking={booking} handelRemovedBooing={handelRemovedBooing}> </Chart>)
                     }
 
                 </div>

@@ -21,6 +21,7 @@ const addBookingSet = (layer) => {
 
 const cancleBooking = (id) => {
     const booking = getBooking();
+    console.log(booking)
     const removedBook = booking.filter((book)=> book.id !== id)
     localStorage.setItem("getLayers", JSON.stringify(removedBook))
     console.log(removedBook, "removed")
