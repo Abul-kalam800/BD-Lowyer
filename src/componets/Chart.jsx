@@ -7,7 +7,7 @@ const Chart = ({ book, handelRemovedBooing }) => {
    
     return (
         <div>
-            {/* this is charts  section  */}
+            {/* this is charts  section git */}
             <div className='my-9 border border-gray-300 p-5 rounded-2xl '>
                 <h1 className='font-bold text-2xl'>{name}</h1>
                 <div className='flex justify-between items-center border-b border-dashed border-gray-300 py-5 '>
@@ -21,5 +21,3 @@ const Chart = ({ book, handelRemovedBooing }) => {
         </div>
     );
 };
-
-export default Chart;
